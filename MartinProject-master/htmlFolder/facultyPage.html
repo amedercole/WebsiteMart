@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- These files are required for bootstrap, bootstrap good for website creation and maintenance-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- end of required files for bootstrap-->
+
+
+    <!-- added this to ensure jquery is on file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- this is the custom js for the home page-->
+    <script src="../jsFolder/facultyPage.js"></script>
+
+    <!-- this is custom css for home page-->
+    <link rel="stylesheet" type="text/css" href="../cssFolder/facultyPage.css">
+
+    <title> Faculty Page</title>
+</head>
+
+<body style="color:white">
+
+    <!-- Modal for person-->
+    <div class="modal fade text-dark" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Modal title</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img id="picOfPerson" class="photo" src="../imgFolder/faceMan.jpg">
+                        </div>
+                        <div class="col">
+                            <p id="explanationParagraph"> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- This is a navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">US-Japan Energy Institute</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- if the navbar is too long for the screen-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="generalTrainingModuals.html">Training Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historyPage.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="facultyPage.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="renewableWebPage.html">Be Our Guest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- this is the carousel section-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../imgFolder/Japan_US_flag.jpg" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- this section contains the about us-->
+    <div class="container-fluid" style="background-color: #b3d9ff;padding: 30px;">
+        <div class="row" style="color: black;">
+            <div class="col-8 offset-2 text-center">
+                <h1><b>Our Faculty</b></h1>
+                <p>Our faculty is composed of distinguished US and Japanese business leaders, government officials,
+                    scientists and university professors who share an interest in energy security, climate, policies,
+                    economic progress and geo-political expertise.
+                </p>
+                <p>They are presented in the training program with specific videos made for
+                    the US-Japan Energy Institute
+                </p>
+            </div>
+        </div>
+    </div> <!-- end of about us section-->
+
+    <div class="container-fluid text-dark" style="background-color: #e6f2ff;padding: 30px;">
+        <div class="row" style="color: black;">
+            <div class="col text-center">
+                <h1><b> Lecturers/Guest Speakers </b></h1>
+            </div>
+        </div>
+
+        <!-- first row of faculty info-->
+        <div class="row gridRow text-dark" id="row1">
+            <div class="col" id="WilliamFMartin">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/william martin.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Hon. William F. Martin</b></h5>
+                        <p class="card-text">Former Deputy Secretary of Energy</p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <a href="specificFaculty.html" class="btn btn-primary">Click here to go to faculty page</a> -->
+                        <button class="btn btn-primary" onclick="openModal('Martin')">Learn More About Mr.
+                            Martin</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/Daniel Poneman.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Hon. Daniel Poneman</b></h5>
+                        <p class="card-text">Former Deputy Secretary of Energy</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" onclick="openModal('Poneman')">Learn More About Hon. Daniel
+                            Poneman</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" id="SusanEisenhower">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/susan-eisenhower.jpg" class="card-img-top" alt="Employee 1">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Her Excellency Susan Eisenhower, </b></h5>
+                        <p class="card-text">Advisor, Department of Energy <br>
+                            Granddaughter of President Eisenhower</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" onclick="openModal('Eisenhower')">Learn More About Susan
+                            Eisenhower</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/MeserveRichard.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Dr. Richard Meserve</b></h5>
+                        <p class="card-text">Former Chairman of Nuclear Regulatory Commission <br>
+                            Chairman, NRA International Advisory Board</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" onclick="openModal('Meserve')">Learn More About Dr.
+                            Meserve</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of first row-->
+        <!-- second row of faculty info-->
+        <div class="row gridRow text-dark" id="row1">
+            <div class="col-3" id="JoePerkowski">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/Joseph Perkowski.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Dr. Joseph Perkowski</b></h5>
+                        <p class="card-text">Massachusetts Institute of Technology</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" onclick="openModal('Perkowski')">Learn More About Dr.
+                            Perkowski</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/Nobuo Tanaka.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Nobuo Tanaka</b></h5>
+                        <p class="card-text">Former Executive Director, <br> IEA</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/Okabe.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Kazuhiro Ikebe </b></h5>
+                        <p class="card-text"> Chairman, FEPC <br> President, Kyushu Electric</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">A link to take persons page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/jan-havranek.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> His Excellency Jan Havranek</b></h5>
+                        <p class="card-text">Former Vice Minister of Defense <br>
+                            Czech Republic</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" onclick="openModal('Havranek')">Learn More About Mr.
+                            Havranek</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of second row-->
+        <!-- third row of faculty info-->
+        <div class="row gridRow text-dark" id="row1">
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/facultyPhotos/Naomi Hirose.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Naomi Hirose</b></h5>
+                        <p class="card-text">President, <br> Japan Energy Association</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col-3" id="Masuda">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Naohiro Masuda.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b> Naohiro Masuda</b></h5>
+                    <p class="card-text">President <br>
+                        Japan Nuclear Fuel (JNFL)</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Tatsuya Terazawa.jpg" class="card-img-top" alt="Employee 1">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b> Tatsuya Terazawa </b></h5>
+                    <p class="card-text">Former Chairman, <br> Institute of Energy Economics (IEEJ)</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Masakazu Toyoda.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b> Masakazu Toyota</b></h5>
+                    <p class="card-text">Former Chairman, <br>
+                        Institute of Energy Economics IEEJ </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of third row-->
+    <!-- fourth row of history info-->
+    <div class="row gridRow" id="row1">
+        <div class="col" id="DaleKlein">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Dale Klein.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b> Dr. Dale Klein </b></h5>
+                    <p class="card-text"> University of Texas <br>
+                        Former, Chairman <br>
+                        Nuclear Regulatory Commission</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" onclick="openModal('Klein')">Learn More About Dr. Klein</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Maria Korsnick.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Ms. Maria Korsnick</b></h5>
+                    <p class="card-text"> President <br> Nuclear Energy Institute
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" onclick="openModal('Korsnick')">Learn More About Ms.
+                        Korsnick</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/William Magwood IV.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b> William Magwood, IV </b></h5>
+                    <p class="card-text"> Director General <br>
+                        Nuclear Energy Agency<br>
+                        OECD</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" onclick="openModal('Magwood')">Learn More About Mr.
+                        Magwood</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Faith Birol.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b> Fatih Birol</b></h5>
+                    <p class="card-text">Executive Director <br>
+                        International Energy Agency</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" onclick="openModal('Birol')">Learn More About Mr. Birol</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of fourth row-->
+    <!-- fifth (last) row of history info-->
+    <div class="row gridRow" id="row1">
+        <div class="col-3" id="">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/David Cohen.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b> David Cohen</b></h5>
+                    <p class="card-text"> Former Deputy Director, CIA <br>
+                        Former Deputy Police Commissioner, New York</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary" onclick="openModal('Cohen')">Learn More About Mr. Cohen</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Yasi Nakasone.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Yasi Nakasone</b></h5>
+                    <p class="card-text">Former Prime Minister</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">A link to take persons page</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card h-100">
+                <img src="../imgFolder/facultyPhotos/Ronald Reagan.jpg" class="card-img-top" alt="Employee 1">
+                <div class="card-body">
+                    <h5 class="card-title"><b>Ronald Reagan</b></h5>
+                    <p class="card-text"> Former President</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">A link to take persons page</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of fifth (last) row-->
+    </div> <!-- end of lecturer container-->
+
+
+    <!-- this is the sticky footer area-->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="#">Test.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- this is needed for action of bootstrap --poopper is located here too-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

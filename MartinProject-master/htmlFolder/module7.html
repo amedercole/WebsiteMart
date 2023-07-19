@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- These files are required for bootstrap, bootstrap good for website creation and maintenance-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- end of required files for bootstrap-->
+
+
+    <!-- added this to ensure jquery is on file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- this is the custom js for the training moduals page-->
+    <script src="../jsFolder/module7.js"></script>
+
+    <!-- this is custom css for training moduals page-->
+    <link rel="stylesheet" type="text/css" href="../cssFolder/generalTrainingModuals.css">
+
+    <title> Module 7 - Geopolitical Challenges Facing Japan</title>
+</head>
+
+<body>
+    <!-- This is a navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">US-Japan Energy Institute</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- if the navbar is too long for the screen-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="generalTrainingModuals.html">Training Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historyPage.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="facultyPage.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="renewableWebPage.html">Be Our Guest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- this contains the lessons for the modual and the intial start module button-->
+    <div class="container-fluid" style="background-color: #e6f2ff;padding: 30px;">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h2><b>Module Timeline </b></h2>
+
+                <ul>
+                    <li id="firstItem">
+                        Video 1 - Introduction to Module by <a href="facultyPage.html#WilliamFMartin"> Mr. Bill
+                            Martin!</a>
+                    </li>
+                    <li id="keyQuestionsItem">
+                        Key Questions
+                    </li>
+                    <li id="secondItem">
+                        Reading 1 - Federal Document
+                    </li>
+                    <li id="thirdItem">
+                        Video 2 - Geopolitics by <a href="facultyPage.html#Tsukada"> Mr. Tsukada</a>
+                    </li>
+                    <li id="fourthItem">
+                        Reading 2 - Letter from Ronald Reagan To Mr. Bill Martin
+                    </li>
+                    <li id="fifthItem">
+                        Video 3 - National Security by <a href="facultyPage.html#DavidCohen"> Mr. Cohen</a>
+                    </li>
+                    <li id="quiz">
+                        Discussion
+                    </li>
+                </ul>
+                <h3> What you will learn:</h3>
+                <ul>
+                    <li>・Global energy resource flow <br>・世界のエネルギーの資源の流れ
+                    </li>
+                    <li>・Japan&#39;s energy import situation<br>・日本のエネルギー輸入状況</li>
+
+                    <li>・Geopolitical risks that Japan should be mindful of <br> ・日本が留意すべき地政学リスク</li>
+                    <li>・Geopolitical situation following Russia&#39;s invasion of Ukraine <br>・ロシアのウクライナ侵攻以降の地政学の状況
+                    </li>
+                    <li>・Historical context related to energy security (relationship with
+                        the History section?) <br> ・エネルギーセキュリティにまつわる過去の歴史（ヒストリ
+                        ーセクションとの関係性？）</li>
+                    <li>
+                        ‐Oil shocks <br> －オイルショック
+                    </li>
+                    <li>
+                        ‐US-Soviet Cold War, among others,　etc <br> －米ソ冷戦　他
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" id="intialPage">
+            <div class="text-center">
+                <button class="btn btn-primary" onclick="presentFirstVideo()"> Start Module!</button>
+            </div>
+        </div>
+    </div>
+    <!-- this container will have all learning materials associated with this module-->
+    <div class="container-fluid" style="background-color: #b3d9ff;padding: 30px;" id="trainingSection" hidden>
+        <div class="row" id="videoSection">
+            <div class="col-10 offset-1 text-center">
+
+                <!-- video one-->
+                <video width="70%" height="100%" id="video1" controls style="border: 6px solid white;">
+                    <source src="../imgFolder/videos/Training/Training Course for Geopolitics.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- video two-->
+                <video width="70%" height="100%" id="video2" controls style="border: 6px solid white;" hidden>
+                    <source src="../imgFolder/videos/Training/Tsukada Geopolitics Module.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- video three -->
+                <video width="70%" height="100%" id="video3" controls style="border: 6px solid white;" hidden>
+                    <source src="../imgFolder/videos/Training/David Cohen National Security.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="text-center" style="margin-top: 10px;">
+                <button class="btn btn-primary" onclick="presentKeyQuestions()" id="buttonVideo1"> Continue to next
+                    lesson!</button>
+                <button class="btn btn-primary" onclick="presentSecondReading()" id="buttonVideo2" hidden> Continue to
+                    next
+                    lesson!</button>
+
+                <button class="btn btn-primary" onclick="presentQuiz()" id="buttonVideo3" hidden> Continue to next
+                    lesson!</button>
+
+            </div>
+        </div>
+
+        <div class="row" id="keyQuestions" hidden>
+            <div class="col-8 offset-2 text-center" style="margin-top: 10px;">
+                <h1> Consider These Questions While Reading The Documents and Watching The Videos</h1>
+                <ul>
+                    <li>
+                        Siberian Pipeline—Economic War against Soviet Union (including NSSD 66). What might our
+                        adversaries be planning against us?
+                    </li>
+                    <li>
+                        Energy Espionage—past experiences and future vulnerabilities.
+                    </li>
+                    <li>
+                        Defining Economic Security: Williamsburg Summit Communique: 1983. What is the global economic
+                        outlook and Implicatons for electric power? What role can nuclear power play?
+                    </li>
+                    <li>
+                        Middle East protection war plan (Iran-Iraq war). How do we protect oil/gas sea lanes against our
+                        top adversary, China?
+                    </li>
+                    <li>
+                        Ending the Cold War —how do we confront current Cold War with China? How do we compete with
+                        Russia/China in exporting nuclear power plants?
+                    </li>
+                    <li>
+                        Launching ITER — a plan of international cooperation; what further cooperation is needed for
+                        decarbonization and energy security on a global scale? Is Hydrogen a solution? Nuclear power:
+                        large scale and SMR? Fusion?
+                    </li>
+                    <li>
+                        Nuclear power and Nuclear non-proliferation (the US-Japan nuclear cooperation
+                        agreement)…challenges confronting the world today. How do we showcase Rokkasho? Why is Rokkasho
+                        important to nuclear power?
+                    </li>
+                    <li>
+                        Protecting vital infrastructure: — Abu Nidal terrorist airport attack. Potential attacks on
+                        vulnerable electrical infrastructure. What has Fukushima taught us about nuclear safety?
+                    </li>
+                    <li>
+                        Martin-Trump North Korea — the importance of “What IF”. How do we deal with authoritative
+                        leaders in China, North Korea, Russia? What will be impact on energy security?
+                    </li>
+                    <li>
+                        National Security calendar…from Reagan to Trump (unique Martin). How can we use the calendar for
+                        our own electric utility companies and within electric utilities planning for future growth in
+                        nuclear power?
+                    </li>
+                </ul>
+                <div class="text-center" style="margin-top: 10px;">
+                    <button class="btn btn-primary" onclick="presentFirstReading()"> Continue to next lesson!</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- first reading-->
+        <div class="row" id="firstReading" style="height: 80vh;" hidden>
+            <!--  can use google docs, embed, or iframe, using embed rn-->
+            <embed src="../imgFolder/documents/Module7/Reading 1.pdf" width="70%" height="90%" />
+            <div class="text-center" style="margin-top: 10px;">
+                <button class="btn btn-primary" onclick="presentSecondVideo()"> Continue to next lesson!</button>
+            </div>
+        </div>
+
+        <!-- second reading  -->
+        <div id="secondReading" hidden>
+            <div class="row" style="height: 70vh;">
+                <div class="col-3">
+                    <h4> Here are other documents to look through in this module:</h4>
+                    <ul>
+                        <li>
+                            <a href="../imgFolder/documents/Module7/Martin cable to CIA 4_28_83 on IEA gas study.pdf"
+                                download>Martin to CIA on IEA Gas Study</a>
+                        </li>
+                        <li>
+                            <a href="../imgFolder/documents/Module7/National Plan of Action, Iran-Iraq War.pdf"
+                                download>National Plan of Action, Iran Iraq War</a>
+                        </li>
+                        <li>
+                            <a href="../imgFolder/documents/Module7/Radio Address Camp David 9-29-84.pdf" download>Radio
+                                Access Camp David</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <h2 class="text-center">Letter From President Reagan to Mr. Martin</h2>
+                    <embed src="../imgFolder/documents/Module7/Letter from Ronald Reagan 5-24-83.pdf" width="100%"
+                        height="100%" />
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 10vh;">
+                <button class="btn btn-primary" onclick="presentThirdVideo()"> Continue to next lesson!</button>
+            </div>
+        </div>
+
+        <div class="row" id="resultsSection" hidden>
+            <div class="col-6 offset-3" style="border: 2px solid black;">
+                <h5> You answered: </h5>
+                <p id="userAnswerResult"> </p>
+            </div>
+        </div>
+
+        <div id="discussionArea" hidden>
+            <div class="row" id="quizSection">
+                <div class="col-6 offset-3">
+                    <h1> <b> Discussion: </b></h1>
+                    <h2> Question: How do you predict oil prices?</h2>
+                    <textarea id="userAnswer" style="width: 100%; border: 2px solid black;"></textarea>
+                    <button class="btn btn-primary col-2 offset-5" onclick="submitQuiz()"> Submit</button>
+                </div>
+            </div>
+            <div class="row" id="discussionTable">
+                <div class="col-8 offset-2">
+                    <h3 class="text-center"> Other Replies:</h3>
+                    <ul class="text-align-left">
+                        <li> One Answer Here</li>
+                        <li> Another Answer Here</li>
+                        <li> Last Answer Here</li>
+                    </ul>
+                    <div class="col-12 text-center">
+                        <a class="btn btn-primary" href="generalTrainingModuals.html">Return To Training Modules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        Structure
+        first section
+        image showing training related to this module
+
+        module X!
+
+        english and japanese title
+
+        then get started
+
+        then watch video
+
+        then read paper
+
+        then watch
+
+        then quiz
+    -->
+
+
+
+    <!-- this is the sticky footer area-->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="#">Test.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- this is needed for action of bootstrap --poopper is located here too-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

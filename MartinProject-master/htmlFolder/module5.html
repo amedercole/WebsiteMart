@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- These files are required for bootstrap, bootstrap good for website creation and maintenance-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- end of required files for bootstrap-->
+
+
+    <!-- added this to ensure jquery is on file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- this is the custom js for the training moduals page-->
+    <script src="../jsFolder/module5.js"></script>
+
+    <!-- this is custom css for training moduals page-->
+    <link rel="stylesheet" type="text/css" href="../cssFolder/generalTrainingModuals.css">
+
+    <title> Module 5 - US-Japan Nuclear Cooperation Agreement</title>
+</head>
+
+<body>
+    <!-- This is a navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">US-Japan Energy Institute</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- if the navbar is too long for the screen-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="generalTrainingModuals.html">Training Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historyPage.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="facultyPage.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="renewableWebPage.html">Be Our Guest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- this contains the lessons for the modual and the intial start module button-->
+    <div class="container-fluid" style="background-color: #e6f2ff;padding: 30px;">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h2><b>Module Timeline </b></h2>
+
+                <ul>
+                    <li id="firstItem">
+                        Video 1 - Introduction by <a href="facultyPage.html#WilliamFMartin"> Mr. Bill Martin!</a>
+                    </li>
+                    <li id="secondItem">
+                        Reading 1 - US-Japan Nuclear Cooperation agreement of 1988
+                    </li>
+                    <li id="thirdItem">
+                        Video 2 - TBA
+                    </li>
+                    <li id="fourthItem">
+                        Reading 2 - TBA
+                    </li>
+                    <li id="quiz">
+                        Quiz
+                    </li>
+                </ul>
+                <h3> What you will learn:</h3>
+                <ul>
+                    <li>・Background for Japan obtaining comprehensive prior
+                        consent (Context of the 1968 agreement revision) <br>・日本が包括事前同意を得られるようになった背景（1968年
+                        協定改定の背景）
+                    </li>
+                    <li>‐Situation in the United States (Opinions), views towards
+                        Japan (Positive, critical)<br>－米国の状況（意見）、日本に対する見方（肯定的、批判
+                        的）</li>
+
+                    <li>・Situation in Japan <br> ・日本の状況</li>
+                    <li>・Japan&#39;s uniqueness and its impact on other countries <br> ・日本の特殊性および他国への影響</li>
+                    <li>>・Current views and opinions in the United States (Regarding
+                        reprocessing itself, Japan&#39;s reprocessing policy) <br>・現状における米国の意見、見方（再処理そのもの、日本の
+                        再処理路線）</li>
+                    <li>
+                        ・Stance on future US nuclear agreements (Considering
+                        changes in international circumstances, such as Saudi
+                        Arabia, South Korea) <br>・今後の米国の原子力協定についてのスタンス（国際情勢の
+                        変化を踏まえて。サウジ、韓国等）
+                    </li>
+                    ・The United States&#39; situation regarding the nuclear phase-out
+                    (maintaining the nuclear fuel cycle) under the Democratic
+                    Party government immediately after the Fukushima Daiichi
+                    accident (It is said that the nuclear phase-out policy was
+                    withdrawn in Japan due to pressure from the United States). <br> ・福島第一事故直後の民主党政権下における原子力撤退（核
+                    燃料サイクル維持）にかかる米国の状況（日本では米国か
+                    らの外圧で原子力撤退方針が撤回されたと言われている
+                    ）。
+                </ul>
+            </div>
+        </div>
+        <div class="row" id="intialPage">
+            <div class="text-center">
+                <button class="btn btn-primary" onclick="presentFirstVideo()"> Start Module!</button>
+            </div>
+        </div>
+    </div>
+    <!-- this container will have all learning materials associated with this module-->
+    <div class="container-fluid" style="background-color: #b3d9ff;padding: 30px;" id="trainingSection" hidden>
+        <div class="row" id="videoSection">
+            <div class="col-10 offset-1 text-center">
+
+                <!-- video one-->
+                <video width="70%" height="100%" id="video1" controls style="border: 6px solid white;">
+                    <source src="../imgFolder/videos/Training/Energy Methodology-Martin.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- video two-->
+                <video width="70%" height="100%" id="video2" controls style="border: 6px solid white;" hidden>
+                    <source src="movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="text-center" style="margin-top: 10px;">
+                <button class="btn btn-primary" onclick="presentFirstReading()" id="buttonVideo1"> Continue to next
+                    lesson!</button>
+                <button class="btn btn-primary" onclick="presentSecondReading()" id="buttonVideo2" hidden> Continue to
+                    next
+                    lesson!</button>
+            </div>
+        </div>
+
+        <!-- first reading-->
+        <div class="row" id="firstReading" style="height: 80vh;" hidden>
+            <!--  can use google docs, embed, or iframe, using embed rn-->
+            <embed src="../imgFolder/documents/Module5/Module5Document.pdf" width="70%" height="90%" />
+            <div class="text-center" style="margin-top: 10px;">
+                <button class="btn btn-primary" onclick="presentSecondVideo()"> Continue to next lesson!</button>
+            </div>
+        </div>
+
+        <!-- second reading  -->
+        <div class="row" id="secondReading" style="height: 80vh;" hidden>
+            <div class="col-6 offset-4">
+                <h5> Currently the same reading as the previous reading</h5>
+            </div>
+            <embed src="../imgFolder/documents/Module1Document.pdf" width="70%" height="90%" />
+            <div class="text-center" style="margin-top: 10px;">
+                <button class="btn btn-primary" onclick="presentQuiz()"> Continue to next lesson!</button>
+            </div>
+        </div>
+
+        <div class="row" id="quizSection" hidden>
+            <div class="col-6 offset-3">
+                <h1> <b> Quiz: </b></h1>
+                <h2> Question: How do you predict oil prices?</h2>
+                <textarea id="userAnswer" style="width: 100%;"></textarea>
+                <button class="btn btn-primary col-2 offset-5" onclick="submitQuiz()"> Submit</button>
+            </div>
+        </div>
+
+        <div class="row" id="resultsSection" hidden>
+            <div class="col-6 offset-3">
+                <h1> Results:</h1>
+                <h5> You answered: </h5>
+                <p id="userAnswerResult"> </p>
+                <a class="btn btn-primary" href="index.html">Return Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        Structure
+        first section
+        image showing training related to this module
+
+        module X!
+
+        english and japanese title
+
+        then get started
+
+        then watch video
+
+        then read paper
+
+        then watch
+
+        then quiz
+    -->
+
+
+
+    <!-- this is the sticky footer area-->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="#">Test.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- this is needed for action of bootstrap --poopper is located here too-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

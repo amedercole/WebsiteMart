@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- These files are required for bootstrap, bootstrap good for website creation and maintenance-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- end of required files for bootstrap-->
+
+
+    <!-- added this to ensure jquery is on file-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- this is custom css for history page-->
+    <link rel="stylesheet" type="text/css" href="../cssFolder/historyPage.css">
+
+    <!-- this is the custom js for the history page-->
+    <script src="../jsFolder/historyPage.js"></script>
+
+    <title> History Section</title>
+</head>
+
+<body>
+    <!-- This is a navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">US-Japan Energy Institute</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- if the navbar is too long for the screen-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="generalTrainingModuals.html">Training Modules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historyPage.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="facultyPage.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="renewableWebPage.html">Be Our Guest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- this is carousel of single image-->
+    <div id="myCarousel" class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../imgFolder/compass.jpg" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+    <!-- these are the modals section-->
+    <div>
+        <div class="modal fade" id="historyVideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <video id="video" src="" controls style="width: 100%;"></video>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- this is the history  -->
+    <div class="container-fluid" style="background-color: #b3d9ff;padding: 30px;">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <h1 class="text-center">History Section</h1>
+                <p>The world changed in 1973. The world changed again in 2023. What happened in between during this
+                    fifty year impacted oil prices at least through 18 events. The history sections looks at this in
+                    depth, starting with the Arab oil embargo in 1973 up to and including the Ukraine war of 2022. We
+                    will examine large events like 9/11 and 3/11 as well as key wars in the Middle East.
+                </p>
+                <p>In addition we will look at historical events such as the l979 Tokyo Summit, the Reagan-Nakasone
+                    energy agreement
+                    of 1983 and the US-Japan Nuclear Cooperation agreement of 1988.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is the overall course section material -->
+    <div class="container-fluid" style="background-color: #b3d9ff;padding: 30px;">
+
+        <!-- first row of history info-->
+        <div class="row gridRow" id="row1">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/arabOilEmbargo.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Arab Oil Embargo 1973:</b></h5>
+                        <p class="card-text">The price of oil tripled overnight with the imposition of an embargo on the
+                            US and Europe.<br> What happened and why? </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Arab Oil Embargo.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/iranianRevolution.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Iranian Revolution and Tokyo G-7 - 1979</b></h5>
+                        <p class="card-text"> The price oil tripled again due to the l978 Iranian Revolution — G-7
+                            countries met in Tokyo to decide the response. <br> What did they accomplish?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Iran Revolution.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/coldWarEnergyEspionage.jpg" class="card-img-top"
+                        alt="Employee 1">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Cold War Energy Espionage (Reagan)</b></h5>
+                        <p class="card-text">The US used persuasion and covert action to stop the Russian dominance of
+                            European gas markets. <br>
+                            What tactics were used? Can the same tactics be used today?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                        data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Cold War Espionage.mp4">
+                        Open Video
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/williamsburgEconomicSummit.jpg" class="card-img-top"
+                        alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Williamsburg Economic Summit (1983)</b></h5>
+                        <p class="card-text">Chaired by Reagan with participation of Nakasone, what actions taken here
+                            induced the end of the Cold War? <br> How will we deal with today’s Cold War?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Willamsburg.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of first row-->
+        <!-- second row of history info-->
+        <div class="row gridRow" id="row1">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/reaganNakasone.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Reagan-Nakasone Energy Agreement - 1983</b></h5>
+                        <p class="card-text"> The agreement of Reagan-Nakasone was in energy security encouraging energy
+                            exports from the US to Japan. <br> What type of agreement do we need today?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Reagan Nakasone.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/IranIraqWar.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Iran Iraq War and IEA coordinated stock policy - 1984</b></h5>
+                        <p class="card-text">US, Japan and IEA created coordinated stock draw of their oil stockpiles
+                            and agreed to increase storage. <br> What impact has stock draw had into today’s Ukrainian
+                            war?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Iran Iraq.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/finalizing US-Soviet.jpg" class="card-img-top"
+                        alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> National Security Council Meeting</b></h5>
+                        <p class="card-text"> The White House Situation Room <br>
+                            —determining Cold War Strategy</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Link to that historic point</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/ReaganGorbachevSummit.jpg" class="card-img-top"
+                        alt="Employee 1">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Reagan-Gorbachev Summit and launch of ITER - 1985</b></h5>
+                        <p class="card-text">.This meeting, coordinated by Bill Martin, effectively ended the Cold War.
+                            <br>What was the fusion agreement that was reached and why is that important today?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo"
+                            data-video="../imgFolder/videos/History/Reagan Gorbachev.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of second row-->
+        <!-- third row of history info-->
+        <div class="row gridRow" id="row1">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/US-JapanNuclearAgreement.jpg" class="card-img-top"
+                        alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> US-Japan Nuclear Agreement (1988)</b></h5>
+                        <p class="card-text">Reached after six years of negotiation. <br> What famous General cast the
+                            final
+                            vote in favor of the agreement?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo"
+                            data-video="../imgFolder/videos/History/US Japan Nuclear Agreement.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/gulfWar.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Gulf War (1991)</b></h5>
+                        <p class="card-text">Another Middle East war that began the cycle of endless wars? <br> Should
+                            Bush
+                            have attacked Sadam Hussein at that time?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Gulf War.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/kyotoProtocol.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Kyoto Protocol and Climate (1992)</b></h5>
+                        <p class="card-text">This historic meeting confronted the climate challenge and set targets for
+                            CO2 reduction. <br> Has it been successful?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/911TerroristAttack.jpg" class="card-img-top" alt="Employee 1">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><b> 9/11 Terrorst Attack and Endless Wars(2001)</b></h5>
+                        <p class="card-text">This terrorist attack had an impact on oil prices at the time, but the
+                            summary conflict continues today. <br> Is our electrical grids adequate to protect our
+                            electricity systems?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/911.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of third row-->
+        <!-- fourth row of history info-->
+        <div class="row gridRow" id="row1">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/china flag.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> China—Olympic partner and/or Emerging Threat (2008)</b></h5>
+                        <p class="card-text">What began as a more or less friendly opening is now viewed
+                            confrontationally. <br> How will China expand energy imports and also impact oil and gas
+                            tanker
+                            sea lanes?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/China.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/FukushimaAccident2011.jpg" class="card-img-top"
+                        alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Fukushima Accident 2011</b></h5>
+                        <p class="card-text">The 3/11 event significantly impacted Japan economically and in regards to
+                            energy dependence. <br> What is its status today?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Fukushima.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/covid.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Covid</b></h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Covid.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/ukraineWar.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Ukraine War (2022)</b></h5>
+                        <p class="card-text">This significant war has impacted the world in so many ways. <br> Is it an
+                            energy war at the heart?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of fourth row-->
+        <!-- fifth row of history info-->
+        <div class="row gridRow" id="row1">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/decarbonization.jpg" class="card-img-top" alt="Employee 1">
+
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Global Decarbonization and Energy Security</b></h5>
+                        <p class="card-text"> Both of these initiatives increase a nation’s self sufficiency in energy.
+                            <br> Are they competing or complementary objectives?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/wpag11photo.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> WPA G-11 Embassy Dinner (Euro-Pacific-India)</b></h5>
+                        <p class="card-text">This dinner held at the Chevy Chase club created a new grouping of
+                            democratically like-minded nations. <br> What is the global impact of NATO and QUAD
+                            groupings
+                            working together?
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Embassy Dinner.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/toyko g7.jpg" class="card-img-top" alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Tokyo G-7 (2023) - A New Beginning</b></h5>
+                        <p class="card-text">The most important G-7 meeting in history will be held in Japan in 2023.
+                            Topics will include Ukraine war, energy security, climate and economic growth. All of these
+                            issues are interrelated. They are the types of issues that the US-Japan Energy Institute
+                            will examine and followup to this key international events.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Link to that historic point</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/electricity for humanity.jpg" class="card-img-top"
+                        alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Electricity for Humanity (The Future)</b></h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of fifth row-->
+
+        <!-- sixth (last) row of history info-->
+        <div class="row gridRow" id="row1">
+            <div class="col-3">
+                <div class="card h-100">
+                    <img src="../imgFolder/historyPhotos/Conclusion.jpg" class="card-img-top"
+                        alt="Employee 1">
+                    <div class="card-body">
+                        <h5 class="card-title"><b> Conclusion</b></h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal"
+                            data-bs-target="#historyVideo" data-video="../imgFolder/videos/History/Conclusion.mp4">
+                            Open Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of sixth (last) row-->
+    </div>
+
+
+
+
+    <!-- this is the sticky footer area-->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="#">Test.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- this is needed for action of bootstrap --poopper is located here too-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
