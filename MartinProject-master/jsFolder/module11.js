@@ -1,7 +1,5 @@
-
-
 //this function will hide the button used to start the first video, and then reveal the first video
-window.onload = function () {
+window.onload = function(){
     presentFirstVideo();
 }
 function presentFirstVideo() {
@@ -12,26 +10,14 @@ function presentFirstVideo() {
     //.innerHTML="<b> Video 1 - XXX </b>";
 }
 
-function presentKeyQuestions() {
-    //hides video sextion
+function presentFirstReading() {
     document.getElementById("video1").pause();
     document.getElementById("videoSection").setAttribute("hidden", "hidden");
-    document.getElementById("firstItem").classList.remove("bold");
-
-    //reveal key questions
-    document.getElementById("keyQuestionsItem").classList.add("bold");
-    document.getElementById("keyQuestions").removeAttribute("hidden");
-}
-
-function presentFirstReading() {
-    //hide key questions area
-    document.getElementById("keyQuestionsItem").classList.remove("bold");
-    document.getElementById("keyQuestions").setAttribute("hidden", "hidden");
-
-    //this is for the first reading
     document.getElementById("firstReading").removeAttribute("hidden");
+    document.getElementById("firstItem").classList.remove("bold");
+    //innerHTML="Video 1 - XXX";
     document.getElementById("secondItem").classList.add("bold");
-
+    //innerHTML="<b>Reading 1 - XXX </b>";
     document.getElementById("buttonVideo1").setAttribute("hidden", "hidden");
 }
 
@@ -45,22 +31,10 @@ function presentSecondVideo() {
     document.getElementById("secondItem").classList.remove("bold");
     //innerHTML="Reading 1 - XXX";
     document.getElementById("buttonVideo2").removeAttribute("hidden");
+
 }
 
-function presentThirdVideo(){
-
-    document.getElementById("video2").setAttribute("hidden", "hidden");
-    document.getElementById("video3").removeAttribute("hidden");
-    document.getElementById("secondReading").setAttribute("hidden", "hidden");
-    document.getElementById("videoSection").removeAttribute("hidden");
-    document.getElementById("fifthItem").classList.add("bold");
-    //innerHTML="<b>Video 2 - XXX </b>";
-    document.getElementById("fourthItem").classList.remove("bold");
-    //innerHTML="Reading 1 - XXX";
-    document.getElementById("buttonVideo3").removeAttribute("hidden");
-}
-
-function presentSecondReading() {
+function presentSecondReading(){
     document.getElementById("video2").pause();
     document.getElementById("videoSection").setAttribute("hidden", "hidden");
     document.getElementById("secondReading").removeAttribute("hidden");
@@ -70,35 +44,21 @@ function presentSecondReading() {
     //innerHTML="<b>Reading 1 - XXX </b>";
     document.getElementById("buttonVideo2").setAttribute("hidden", "hidden");
 }
-function presentFourthVideo(){
-  document.getElementById("buttonVideo3").setAttribute("hidden", "hidden");
-  document.getElementById("video3").pause();
-  document.getElementById("video3").setAttribute("hidden", "hidden");
-  document.getElementById("video4").removeAttribute("hidden");
-  document.getElementById("videoSection").removeAttribute("hidden");
-  document.getElementById("sixItem").classList.add("bold");
-  //innerHTML="<b>Video 2 - XXX </b>";
-  document.getElementById("fifthItem").classList.remove("bold");
-  //innerHTML="Reading 1 - XXX";
-  document.getElementById("buttonVideo4").removeAttribute("hidden");
-}
 
 function presentQuiz() {
-    document.getElementById("video4").pause();
-    document.getElementById("sixItem").classList.remove("bold");
-    //document.getElementById("secondReading").setAttribute("hidden", "hidden");
-    document.getElementById("videoSection").setAttribute("hidden","hidden");
+    document.getElementById("secondReading").setAttribute("hidden", "hidden");
     document.getElementById("discussionArea").removeAttribute("hidden");
     document.getElementById("quiz").classList.add("bold");
     //innerHTML="<b>Video 2 - XXX </b>";
-    document.getElementById("fifthItem").classList.remove("bold");
+    document.getElementById("fourthItem").classList.remove("bold");
 }
 
-function submitQuiz() {
-    document.getElementById("quizSection").setAttribute("hidden", "hidden");
+function submitQuiz(){
+    document.getElementById("quizSection").setAttribute("hidden","hidden");
     document.getElementById("resultsSection").removeAttribute("hidden");
     document.getElementById("userAnswerResult").innerHTML = document.getElementById("userAnswer").value;
 }
+
 function displayAnswer1() {
     if (document.getElementById('option-11').checked) {
       document.getElementById('block-11').style.border = '3px solid limegreen'

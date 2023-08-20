@@ -16,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- this is the custom js for the training moduals page-->
-    <script src="../jsFolder/module7.js"></script>
+    <script src="../jsFolder/module6.js"></script>
 
     <!-- this is custom css for training moduals page-->
     <link rel="stylesheet" type="text/css" href="../cssFolder/generalTrainingModuals.css">
@@ -126,6 +126,8 @@
                 <button class="btn btn-primary" onclick="presentSecondReading()" id="buttonVideo2" hidden> Continue to
                     next
                     lesson!</button>
+                <button class="btn btn-primary" onclick="presentQuiz()" id="buttonVideo3" hidden> Continue to next
+                    lesson!</button>
             </div>
         </div>
 
@@ -149,21 +151,68 @@
             </div>
         </div>
 
-        <div class="row" id="quizSection" hidden>
+        <!-- <div class="row" id="quizSection" hidden>
             <div class="col-6 offset-3">
                 <h1> <b> Quiz: </b></h1>
                 <h2> Question: How do you predict oil prices?</h2>
                 <textarea id="userAnswer" style="width: 100%;"></textarea>
                 <button class="btn btn-primary col-2 offset-5" onclick="submitQuiz()"> Submit</button>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row" id="resultsSection" hidden>
-            <div class="col-6 offset-3">
-                <h1> Results:</h1>
-                <h5> You answered: </h5>
-                <p id="userAnswerResult"> </p>
-                <a class="btn btn-primary" href="index.html">Return Home</a>
+        <div id="discussionArea" hidden>
+            <div class="row" id="quizSection">
+                <div class="col-6 offset-3">
+                    <h1> <b> Discussion: </b></h1>
+                    <div style='transform: scale(0.70); position: relative; top: -50px;'>
+                        <h3>Why is Nuclear Energy important for geopolitics and the environment?</h3>
+                        <p>Choose 1 answer</p>
+                        <hr />
+                      
+                        <div id='block-11' style='padding: 10px;'>
+                          <label for='option-11' style=' padding: 5px; font-size: 1.5rem;'>
+                            <input type='radio' name='option' value='11' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Nuclear Energy affects a countries ability to power industry in a clean way.</label>
+                          <span id='result-11'></span>
+                        </div>
+                        <hr />
+                      
+                        <div id='block-12' style='padding: 10px;'>
+                          <label for='option-12' style=' padding: 5px; font-size: 1.5rem;'>
+                            <input type='radio' name='option' value='12' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                        Nuclear Energy makes the citizens of a country proud to have a nuclear plant.</label>
+                          <span id='result-12'></span>
+                        </div>
+                        <hr />
+                      
+                        <div id='block-13' style='padding: 10px;'>
+                          <label for='option-13' style=' padding: 5px; font-size: 1.5rem;'>
+                            <input type='radio' name='option' value='1/3' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Nuclear Energy is good for the enviroment because it creates less pollution than fossil fuels. </label>
+                          <span id='result-13'></span>
+                        </div>
+                        <hr />
+                      
+                        <div id='block-14' style='padding: 10px;'>
+                          <label for='option-14' style=' padding: 5px; font-size: 1.5rem;'>
+                            <input type='radio' name='option' value='1/6' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                            Nuclear Energy will help your country build nuclear bombs quicker.</label>
+                          <span id='result-14'></span>
+                        </div>
+                        <hr />
+                        <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Submit</button>
+                        &nbsp;&nbsp;&nbsp;
+                        <button type='button' onclick='showCorrectAnswer2()' style='width: 300px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700;'>Display Correct Answer</button>
+                      </div>
+                      <a id='showanswer1'></a>
+                </div>
+            </div>
+            <div class="row" id="discussionTable">
+                <div class="col-8 offset-2">
+                    <div class="col-12 text-center">
+                        <a class="btn btn-primary" href="generalTrainingModuals.html">Return To Training Modules</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
